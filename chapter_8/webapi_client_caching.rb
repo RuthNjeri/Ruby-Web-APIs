@@ -15,5 +15,5 @@ end
 
 get '/users' do
   etag Digest::SHA1.hexdigest(users.to_s)
-  users.map { |name, data| data}.to_json
+  users.map { |name, data| data }.to_json
 end
